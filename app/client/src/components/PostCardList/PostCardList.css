@@ -1,0 +1,14 @@
+.post-card-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-basis: 0;
+  flex-grow: 1;
+  gap: 10px;
+  overflow-y: auto;
+}
+
+.no-results {
+  font-style: italic;
+  margin: 20px 0;
+} 

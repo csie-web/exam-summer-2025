@@ -1,0 +1,39 @@
+.posts-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  gap: 1.5rem;
+}
+
+.create-post-section {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  background-color: var(--secondary-color);
+}
+
+.post-textarea {
+  width: 100%;
+  min-height: 100px;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid var(--border-color);
+  resize: none;
+  font-family: inherit;
+  box-sizing: border-box;
+}
+
+.post-button:hover:not(:disabled) {
+  opacity: 0.9;
+}
+
+.post-button:disabled {
+  background-color: var(--muted-bg-color);
+  cursor: not-allowed;
+}

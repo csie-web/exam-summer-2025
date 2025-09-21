@@ -1,0 +1,62 @@
+.user-card {
+  display: flex;
+  width: 90%;
+  box-sizing: border-box;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  transition: background-color 0.2s ease;
+}
+
+.user-card:hover {
+  background-color: var(--secondary-color);
+}
+
+.avatar-container {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 15px;
+}
+
+.avatar-image {
+  max-width: 80px;
+  border-radius: 50%;
+}
+
+.content-container {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.user-content {
+  flex-grow: 1;
+  padding: 5px;
+}
+
+.user-content p {
+  margin: 5px 0;
+}
+
+.subscribe-button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  background-color: var(--secondary-bg-color);
+  color: var(--secondary-color);
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.subscribe-button.subscribed {
+  background-color: var(--third-color);
+}
+
+.subscribe-button:hover {
+  opacity: 0.8;
+}
